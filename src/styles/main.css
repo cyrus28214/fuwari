@@ -126,6 +126,15 @@
     .copy-btn.success .success-icon {
         @apply opacity-100
     }
+    details {
+        @apply rounded-xl overflow-hidden px-5 pb-3 bg-[var(--collapse-bg)];
+    }
+    details > summary {
+        @apply bg-[var(--collapse-summary-bg)] px-5 py-3 -mb-3 -mx-5 text-lg font-bold;
+    }
+    details[open] > summary {
+        @apply mb-3
+    }
 }
 
 .custom-md img, #post-cover img {
